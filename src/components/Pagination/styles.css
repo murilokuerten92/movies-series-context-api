@@ -1,0 +1,40 @@
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination > * {
+  margin: 0 7px;
+}
+
+.pagination > button {
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #38f251;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.pagination > button > span {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .pagination > button > span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

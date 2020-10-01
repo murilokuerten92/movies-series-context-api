@@ -1,0 +1,33 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  
+    > * {
+      margin: 0 7px;
+    }
+  
+    > button {
+      padding: 0 15px;
+      height: 30px;
+      line-height: 30px;
+      background-color: rgb(56, 242, 81);
+      color: #fff;
+      font-size: 15px;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      outline: 0;    
+  
+      > span {
+        color: #fff;
+        
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  
