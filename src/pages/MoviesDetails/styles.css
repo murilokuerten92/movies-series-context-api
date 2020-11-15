@@ -1,0 +1,28 @@
+.wrapper {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.wrapper__img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.wrapper__value {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.button-details {
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: none;
+  border-style: 1px solid #000000;
+}
+
+.button-details:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */

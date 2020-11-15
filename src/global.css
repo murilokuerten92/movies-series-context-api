@@ -3,7 +3,7 @@
 
 *{
     margin: 0;
-
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,4 +21,14 @@ button {
     cursor: pointer;
 }
 
+.app-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+@media (max-width: 727px) {
+    .app-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}

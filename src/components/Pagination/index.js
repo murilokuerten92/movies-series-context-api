@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import './styles.css'
 
-export default function Pagination({ page, results, datas, loading, showView, changePage }) {
+import { MoviesContext } from '../../contexts/MoviesContext';
+
+const Pagination = () => {
+      
+    const { showView, page, datas, loading, changePage, VIEWCONTAINER } = useContext(MoviesContext);
 
     return (
         <>
             {/* paginação dos resultados */}
-            {showView === results && !loading && datas && datas.totalResults && datas.totalResults > 10 &&
+            {showView === VIEWCONTAINER && !loading && datas && datas.totalResults && datas.totalResults > 10 &&
                 <div className="pagination">
                     {page > 1 &&
                         <button type="button" onClick={() => changePage(page - 1)}>{'<< '}<span>pág. anterior</span></button>}
@@ -23,3 +27,5 @@ export default function Pagination({ page, results, datas, loading, showView, ch
         </>
     )
 }
+
+export default Pagination;
