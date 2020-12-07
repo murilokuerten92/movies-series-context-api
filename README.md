@@ -3,7 +3,7 @@
 </div>
 
 <h1>
-Projeto List movies or series consuming the API run in React using Context API and Hooks.
+Project List movies or series consuming the API run in React using Context API and Hooks.
 </h1>
 
 
